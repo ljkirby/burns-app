@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Burns App",
+    "slug": "burns-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.burnsapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to analyze burn injuries.",
+          "cameraPermission": "The app needs access to your camera to take photos of burn injuries."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Burns App to save analysis results to your photos.",
+          "savePhotosPermission": "Allow Burns App to save analysis results to your photos."
+        }
+      ]
+    ]
+  }
+}

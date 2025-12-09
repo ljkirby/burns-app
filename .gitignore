@@ -258,3 +258,10 @@ buck-out/
 
 
 .swp
+
+# Expo
+.expo/
+.expo-shared/
+
+# Development files
+*.swp
